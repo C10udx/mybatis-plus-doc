@@ -29,7 +29,7 @@
 >   - 与原生枚举混用
 >     - 需配置`defaultEnumTypeHandler`与 `typeEnumsPackage`
 
-# 1、申明通用枚举属性
+## 1、申明通用枚举属性
 
 
 > 方式一： 使用 @EnumValue 注解枚举属性 [完整示例](https://gitee.com/baomidou/mybatis-plus-samples/blob/master/mybatis-plus-sample-enum/src/main/java/com/baomidou/mybatisplus/samples/enums/enums/GradeEnum.java)
@@ -93,7 +93,7 @@ public class User{
 }
 ```
 
-# 2、配置扫描通用枚举
+## 2、配置扫描通用枚举
 
 - 注意!! spring mvc 配置参考，安装集成 MybatisSqlSessionFactoryBean 枚举包扫描，spring boot 例子配置如下：
 
@@ -109,11 +109,11 @@ mybatis-plus:
     typeEnumsPackage: com.baomidou.springboot.entity.enums
   ....
 ```
-# 3、JSON序列化处理
-## 一、Jackson
+## 3、JSON序列化处理
+### 一、Jackson
 	1.在需要响应描述字段的get方法上添加@JsonValue注解即可
 
-## 二、Fastjson
+### 二、Fastjson
 1.全局处理方式
 ```
 		FastJsonConfig config = new FastJsonConfig();
